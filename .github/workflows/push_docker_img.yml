@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: marrip/conifer
           buildargs: CONIFER_VERSION
-          tags: ${{ CONIFER_VERSION }}
+          tags: 0.2.2
