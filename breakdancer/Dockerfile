@@ -1,8 +1,9 @@
 FROM ubuntu:18.04
 ARG BREAKDANCER_VERSION
 RUN apt-get update && \
-    apt-get install -y git cmake build-essential zlib1g-dev libncurses5-dev libncursesw5-dev && \
+    apt-get install -y git cmake build-essential zlib1g-dev libncurses5-dev libncursesw5-dev pkg-config libgd-dev samtools && \
     rm -rf /var/lib/apt/lists/*
+RUN cpan Statistics::Descriptive GD GD::Graph::histogram
 RUN git clone --depth 1 --recursive "https://github.com/genome/breakdancer.git" && \
     cd /breakdancer && \
     git checkout "$BREAKDANCER_VERSION"
@@ -11,3 +12,4 @@ WORKDIR /breakdancer/build
 RUN cmake .. -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/usr/local
 RUN make
 RUN make install
+ENV PATH=$PATH:/breakdancer/perl
