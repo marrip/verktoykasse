@@ -21,6 +21,15 @@ jobs:
           repository: marrip/breakdancer
           build_args: BREAKDANCER_VERSION=4e44b4395cd89a76a574a246b886eec4ee9d295a
           tags: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+      - name: Push CNVkit to Docker Hub
+        uses: docker/build-push-action@v1
+        with:
+          path: cnvkit
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: marrip/cnvkit
+          build_args: CNVKIT_VERSION=0.9.7
+          tags: 0.9.7
       - name: Push CoNIFER to Docker Hub
         uses: docker/build-push-action@v1
         with:
