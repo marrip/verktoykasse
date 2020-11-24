@@ -1,6 +1,6 @@
-# Breakdancer
+# BreakDancer
 
-Breakdancer can detect SVs in next generation paired-end sequencing data.
+BreakDancer can detect SVs in next generation paired-end sequencing data.
 Unfortunately, it is not actively maintained anymore. We are using the
 last commit on the `master` branch to ensure proper compilation. The tool
 comes with a convenience script `bam2cfg.pl` which is written in `perl`
