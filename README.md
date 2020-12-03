@@ -17,3 +17,7 @@ Containerized bioinformatic tools
 - FastQC
 
 > Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data.
+
+- fastp
+
+> Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). Fastp: An ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, 34(17), i884–i890.

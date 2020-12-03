@@ -48,3 +48,12 @@ jobs:
           repository: marrip/fastqc
           build_args: FASTQC_VERSION=0.11.9+dfsg-2
           tags: 0.11.9
+      - name: Push fastp to Docker Hub
+        uses: docker/build-push-action@v1
+        with:
+          path: fastp
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: marrip/fastp
+          build_args: FASTP_VERSION=0.21.0
+          tags: 0.21.0
