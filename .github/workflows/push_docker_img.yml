@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v1
+      - name: Lint Breakdancer Dockerfile
+        uses: brpaz/hadolint-action@v1.2.1
+        with:
+          dockerfile: breakdancer/Dockerfile
       - name: Push Breakdancer to Docker Hub
         uses: docker/build-push-action@v1
         with:
