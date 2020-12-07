@@ -21,6 +21,15 @@ jobs:
           repository: marrip/breakdancer
           build_args: BREAKDANCER_VERSION=4e44b4395cd89a76a574a246b886eec4ee9d295a
           tags: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+      - name: Push Bwa-mem2 to Docker Hub
+        uses: docker/build-push-action@v1
+        with:
+          path: bwa-mem2
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: marrip/bwa-mem2
+          build_args: BWAMEM2_VERSION=2.1
+          tags: 2.1
       - name: Push CNVkit to Docker Hub
         uses: docker/build-push-action@v1
         with:
