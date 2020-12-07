@@ -25,6 +25,10 @@ jobs:
           repository: marrip/breakdancer
           build_args: BREAKDANCER_VERSION=4e44b4395cd89a76a574a246b886eec4ee9d295a
           tags: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+      - name: Lint bwa-mem2 Dockerfile
+        uses: brpaz/hadolint-action@v1.2.1
+        with:
+          dockerfile: bwa-mem2/Dockerfile
       - name: Push Bwa-mem2 to Docker Hub
         uses: docker/build-push-action@v1
         with:
