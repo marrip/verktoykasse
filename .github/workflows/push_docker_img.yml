@@ -13,14 +13,19 @@ jobs:
         array:
           - tool: breakdancer
             version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+            tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
           - tool: bwa-mem2
             version: 2.1
+            tag: 2.1
           - tool: conifer
             version: 0.2.2
+            tag: 0.2.2
           - tool: fastp
             version: 0.21.0
+            tag: 0.21.0
           - tool: fastqc
             version: 0.11.9+dfsg-2
+            tag: 0.11.9
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -37,7 +42,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: marrip/${{ matrix.array.tool }}
           build_args: VERSION=${{ matrix.array.version }}
-          tags: ${{ matrix.array.version }}
+          tags: ${{ matrix.array.tag }}
           #      - name: Push CNVkit to Docker Hub
           #  uses: docker/build-push-action@v1
           #  with:
