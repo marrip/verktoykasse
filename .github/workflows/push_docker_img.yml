@@ -3,74 +3,68 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
+    strategy:
+      matrix:
+        array:
+          - tool: breakdancer
+            version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          - tool: bwa-mem2
+            version: 2.1
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v1
-      - name: Lint Breakdancer Dockerfile
+      - name: Lint Dockerfile
         uses: brpaz/hadolint-action@v1.2.1
         with:
-          dockerfile: breakdancer/Dockerfile
-      - name: Push Breakdancer to Docker Hub
+          dockerfile: ${{ matrix.array.tool }}/Dockerfile
+      - name: Build and push image to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          path: breakdancer
+          path: ${{ matrix.array.tool }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/breakdancer
-          build_args: BREAKDANCER_VERSION=4e44b4395cd89a76a574a246b886eec4ee9d295a
-          tags: 4e44b4395cd89a76a574a246b886eec4ee9d295a
-      - name: Lint bwa-mem2 Dockerfile
-        uses: brpaz/hadolint-action@v1.2.1
-        with:
-          dockerfile: bwa-mem2/Dockerfile
-      - name: Push Bwa-mem2 to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          path: bwa-mem2
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/bwa-mem2
-          build_args: BWAMEM2_VERSION=2.1
-          tags: 2.1
-      - name: Push CNVkit to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          path: cnvkit
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/cnvkit
-          build_args: CNVKIT_VERSION=0.9.7
-          tags: 0.9.7
-      - name: Push CoNIFER to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          path: conifer
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/conifer
-          build_args: CONIFER_VERSION=0.2.2
-          tags: 0.2.2
-      - name: Push FastQC to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          path: fastqc
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/fastqc
-          build_args: FASTQC_VERSION=0.11.9+dfsg-2
-          tags: 0.11.9
-      - name: Push fastp to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          path: fastp
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: marrip/fastp
-          build_args: FASTP_VERSION=0.21.0
-          tags: 0.21.0
+          repository: marrip/${{ matrix.array.tool }}
+          build_args: BREAKDANCER_VERSION=${{ matrix.array.version }}
+          tags: ${{ matrix.array.version }}
+          #      - name: Push CNVkit to Docker Hub
+          #  uses: docker/build-push-action@v1
+          #  with:
+          #    path: cnvkit
+          #    username: ${{ secrets.DOCKER_USERNAME }}
+          #    password: ${{ secrets.DOCKER_PASSWORD }}
+          #    repository: marrip/cnvkit
+          #    build_args: CNVKIT_VERSION=0.9.7
+          #    tags: 0.9.7
+          #- name: Push CoNIFER to Docker Hub
+          #  uses: docker/build-push-action@v1
+          #  with:
+          #    path: conifer
+          #    username: ${{ secrets.DOCKER_USERNAME }}
+          #    password: ${{ secrets.DOCKER_PASSWORD }}
+          #    repository: marrip/conifer
+          #    build_args: CONIFER_VERSION=0.2.2
+          #    tags: 0.2.2
+          #- name: Push FastQC to Docker Hub
+          #  uses: docker/build-push-action@v1
+          #  with:
+          #    path: fastqc
+          #    username: ${{ secrets.DOCKER_USERNAME }}
+          #    password: ${{ secrets.DOCKER_PASSWORD }}
+          #    repository: marrip/fastqc
+          #    build_args: FASTQC_VERSION=0.11.9+dfsg-2
+          #    tags: 0.11.9
+          #- name: Push fastp to Docker Hub
+          #  uses: docker/build-push-action@v1
+          #  with:
+          #    path: fastp
+          #    username: ${{ secrets.DOCKER_USERNAME }}
+          #    password: ${{ secrets.DOCKER_PASSWORD }}
+          #    repository: marrip/fastp
+          #    build_args: FASTP_VERSION=0.21.0
+          #    tags: 0.21.0
