@@ -15,6 +15,12 @@ jobs:
             version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
           - tool: bwa-mem2
             version: 2.1
+          - tool: conifer
+            version: 0.2.2
+          - tool: fastp
+            version: 0.21.0
+          - tool: fastqc
+            version: 0.11.9+dfsg-2
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -41,30 +47,3 @@ jobs:
           #    repository: marrip/cnvkit
           #    build_args: CNVKIT_VERSION=0.9.7
           #    tags: 0.9.7
-          #- name: Push CoNIFER to Docker Hub
-          #  uses: docker/build-push-action@v1
-          #  with:
-          #    path: conifer
-          #    username: ${{ secrets.DOCKER_USERNAME }}
-          #    password: ${{ secrets.DOCKER_PASSWORD }}
-          #    repository: marrip/conifer
-          #    build_args: CONIFER_VERSION=0.2.2
-          #    tags: 0.2.2
-          #- name: Push FastQC to Docker Hub
-          #  uses: docker/build-push-action@v1
-          #  with:
-          #    path: fastqc
-          #    username: ${{ secrets.DOCKER_USERNAME }}
-          #    password: ${{ secrets.DOCKER_PASSWORD }}
-          #    repository: marrip/fastqc
-          #    build_args: FASTQC_VERSION=0.11.9+dfsg-2
-          #    tags: 0.11.9
-          #- name: Push fastp to Docker Hub
-          #  uses: docker/build-push-action@v1
-          #  with:
-          #    path: fastp
-          #    username: ${{ secrets.DOCKER_USERNAME }}
-          #    password: ${{ secrets.DOCKER_PASSWORD }}
-          #    repository: marrip/fastp
-          #    build_args: FASTP_VERSION=0.21.0
-          #    tags: 0.21.0
