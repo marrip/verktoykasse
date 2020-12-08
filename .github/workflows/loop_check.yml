@@ -17,7 +17,7 @@ jobs:
           - tool: cnvkit
             version: 2.0.0
             dir: cnv_kit_dir
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name: test
         run: |
