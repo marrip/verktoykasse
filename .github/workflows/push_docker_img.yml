@@ -17,6 +17,9 @@ jobs:
           - tool: bwa-mem2
             version: 2.1
             tag: 2.1
+          - tool: cnvkit
+            version: 0.9.7
+            tag: 0.9.7
           - tool: conifer
             version: 0.2.2
             tag: 0.2.2
@@ -43,12 +46,3 @@ jobs:
           repository: marrip/${{ matrix.array.tool }}
           build_args: VERSION=${{ matrix.array.version }}
           tags: ${{ matrix.array.tag }}
-          #      - name: Push CNVkit to Docker Hub
-          #  uses: docker/build-push-action@v1
-          #  with:
-          #    path: cnvkit
-          #    username: ${{ secrets.DOCKER_USERNAME }}
-          #    password: ${{ secrets.DOCKER_PASSWORD }}
-          #    repository: marrip/cnvkit
-          #    build_args: CNVKIT_VERSION=0.9.7
-          #    tags: 0.9.7
