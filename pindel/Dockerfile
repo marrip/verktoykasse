@@ -14,7 +14,7 @@ RUN ./INSTALL /samtools-1.2/htslib-1.2.1
 
 FROM ubuntu:16.04
 RUN apt-get update && \
-    apt-get install -y libgomp1=5.4.0-6ubuntu1~16.04.12 && \
+    apt-get install -y --no-install-recommends libgomp1=5.4.0-6ubuntu1~16.04.12 && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=compiler /pindel/pindel /usr/local/bin/pindel
 COPY --from=compiler /pindel/pindel2vcf /usr/local/bin/pindel2vcf
