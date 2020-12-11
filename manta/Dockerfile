@@ -13,7 +13,6 @@ FROM python:2.7.18-buster
 RUN apt-get update && \
     apt-get install -y --no-install-recommends zlib1g-dev=1:1.2.11.dfsg-1 && \
     rm -rf /var/lib/apt/lists/*
-RUN mkdir -p /build/src
 COPY --from=compiler /build/bin /build/bin
 COPY --from=compiler /build/bootstrap /build/bootstrap
 COPY --from=compiler /build/buildTimeConfigInfo.txt /build/buildTimeConfigInfo.txt
@@ -21,6 +20,8 @@ COPY --from=compiler /build/lib /build/lib
 COPY --from=compiler /build/libexec /build/libexec
 COPY --from=compiler /build/redist /build/redist
 COPY --from=compiler /build/lib /build/lib
+RUN true
 COPY --from=compiler /build/src/python /build/src/python
+RUN true
 COPY --from=compiler /build/src/c++ /build/src/c++
 ENV PATH=$PATH:/build/bin
