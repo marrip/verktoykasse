@@ -29,6 +29,9 @@ jobs:
           - tool: fastqc
             version: 0.11.9+dfsg-2
             tag: 0.11.9
+          - tool: manta
+            version: v1.6.0
+            tag: v1.6.0
           - tool: pindel
             version: v0.2.5b8
             tag: v0.2.5b8
