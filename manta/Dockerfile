@@ -20,6 +20,6 @@ COPY --from=compiler /build/lib /build/lib
 COPY --from=compiler /build/libexec /build/libexec
 COPY --from=compiler /build/redist /build/redist
 COPY --from=compiler /build/lib /build/lib
-COPY --from=compiler "/build/src/c++" "/build/src/c++"
 COPY --from=compiler /build/src/python /build/src/python
+COPY --from=compiler /build/src/"c++" /build/src/"c++"
 ENV PATH=$PATH:/build/bin
