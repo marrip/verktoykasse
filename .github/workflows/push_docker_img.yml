@@ -32,6 +32,9 @@ jobs:
           - tool: fastqc
             version: 0.11.9+dfsg-2
             tag: 0.11.9
+          - tool: lumpy
+            version: v0.3.1
+            tag: v0.3.1
           - tool: manta
             version: v1.6.0
             tag: v1.6.0
