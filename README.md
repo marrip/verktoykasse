@@ -18,6 +18,10 @@ Containerized bioinformatic tools
 
 > Krumm, N., Sudmant, P. H., Ko, A., O’Roak, B. J., Malig, M., Coe, B. P., Quinlan, A. R., Nickerson, D. A., & Eichler, E. E. (2012). Copy number variation detection and genotyping from exome sequence data. Genome Research, 22(8), 1525–1532.
 
+- DELLY2
+
+> Rausch, T., Zichner, T., Schlattl, A., Stütz, A. M., Benes, V., & Korbel, J. O. (2012). DELLY: Structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics, 28(18), 333–339.
+
 - FastQC
 
 > Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data.
@@ -25,6 +29,10 @@ Containerized bioinformatic tools
 - fastp
 
 > Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). Fastp: An ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, 34(17), i884–i890.
+
+- Manta
+
+> Chen, X., Schulz-Trieglaff, O., Shaw, R., Barnes, B., Schlesinger, F., Källberg, M., Cox, A. J., Kruglyak, S., & Saunders, C. T. (2016). Manta: Rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics, 32(8), 1220–1222.
 
 - Pindel
 
