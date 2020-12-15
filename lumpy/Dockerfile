@@ -12,10 +12,10 @@ RUN make
 
 FROM python:2.7.18-buster
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends samtools=1.9-4 gawk=1:4.2.1+dfsg-1 samblaster=0.1.24-2 && \
+    apt-get install -y --no-install-recommends samtools=1.9-4 gawk=1:4.2.1+dfsg-1 samblaster=0.1.24-2 bsdmainutils=11.1.2+b1 && \
     rm -rf /var/lib/apt/lists/*
 RUN pip install pysam==0.16.0.1 numpy==1.16.6
 COPY --from=compiler /sambamba-0.7.0-linux-static /usr/local/bin/sambamba
 COPY --from=compiler /lumpy-sv/bin/* /usr/local/bin/
 COPY --from=compiler /lumpy-sv/scripts /home/scripts
-RUN printf "LUMPY_HOME=/usr/local/bin/\\nLUMPY=/usr/local/bin/lumpy\\nSAMBLASTER=/usr/bin/samblaster\\nSAMBAMBA=/usr/local/bin/sambamba\\nSAMTOOLS=/usr/local/bin/samtools\\nPYTHON=/usr/local/bin/python\\nPAIREND_DISTRO=/home/scripts/pairend_distro.py\\nBAMGROUPREADS=/home/scripts/bamkit/bamgroupreads.py\\nBAMFILTERRG=/home/scripts/bamkit/bamfilterrg.py\\nBAMLIBS=/home/scripts/bamkit/bamlibs.py" > /usr/local/bin/lumpyexpress.config
+RUN printf "LUMPY_HOME=/usr/local/bin/\\nLUMPY=/usr/local/bin/lumpy\\nHEXDUMP=/usr/bin/hexdump\\nSAMBLASTER=/usr/bin/samblaster\\nSAMBAMBA=/usr/local/bin/sambamba\\nSAMTOOLS=/usr/bin/samtools\\nPYTHON=/usr/local/bin/python\\nPAIREND_DISTRO=/home/scripts/pairend_distro.py\\nBAMGROUPREADS=/home/scripts/bamkit/bamgroupreads.py\\nBAMFILTERRG=/home/scripts/bamkit/bamfilterrg.py\\nBAMLIBS=/home/scripts/bamkit/bamlibs.py" > /usr/local/bin/lumpyexpress.config
