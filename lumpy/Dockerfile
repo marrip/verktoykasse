@@ -17,5 +17,5 @@ RUN apt-get update && \
 RUN pip install pysam==0.16.0.1 numpy==1.16.6
 COPY --from=compiler /sambamba-0.7.0-linux-static /usr/local/bin/sambamba
 COPY --from=compiler /lumpy-sv/bin/* /usr/local/bin/
-COPY --from=compiler /lumpy-sv/scripts/* /home/scripts/
+COPY --from=compiler /lumpy-sv/scripts /home/scripts
 RUN printf "LUMPY_HOME=/usr/local/bin/\\nLUMPY=/usr/local/bin/lumpy\\nSAMBLASTER=/usr/bin/samblaster\\nSAMBAMBA=/usr/local/bin/sambamba\\nSAMTOOLS=/usr/local/bin/samtools\\nPYTHON=/usr/local/bin/python\\nPAIREND_DISTRO=/home/scripts/pairend_distro.py\\nBAMGROUPREADS=/home/scripts/bamkit/bamgroupreads.py\\nBAMFILTERRG=/home/scripts/bamkit/bamfilterrg.py\\nBAMLIBS=/home/scripts/bamkit/bamlibs.py" > /usr/local/bin/lumpyexpress.config
