@@ -20,6 +20,9 @@ jobs:
           - tool: cnvkit
             version: 0.9.7
             tag: 0.9.7
+          - tool: common
+            version: 1.0.0
+            tag: 1.0.0
           - tool: conifer
             version: 0.2.2
             tag: 0.2.2
