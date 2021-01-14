@@ -42,6 +42,10 @@ Containerized bioinformatic tools
 
 > Ye, K., Schulz, M. H., Long, Q., Apweiler, R., & Ning, Z. (2009). Pindel: A pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads. Bioinformatics, 25(21), 2865–2871.
 
+- seqtools
+
+> https://github.com/seandavi/SDST
+
 - simple_sv_annotation
 
 > https://github.com/AstraZeneca-NGS/simple_sv_annotation
