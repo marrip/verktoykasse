@@ -44,6 +44,9 @@ jobs:
           - tool: pindel
             version: v0.2.5b8
             tag: v0.2.5b8
+          - tool: simple_sv_annotation
+            version: v1.0.0
+            tag: v1.0.0
           - tool: snpeff
             version: 5_0c
             tag: 5.0c
