@@ -6,6 +6,7 @@ RUN apt-get update && \
 RUN git clone -b $VERSION https://github.com/seandavi/SDST.git
 
 FROM python:2.7.18-buster
+RUN pip install numpy==1.16.6
 WORKDIR /SDST
 COPY --from=download /SDST/SDST ./SDST
 COPY --from=download /SDST/scripts ./scripts

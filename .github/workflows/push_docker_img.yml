@@ -45,8 +45,8 @@ jobs:
             version: v0.2.5b8
             tag: v0.2.5b8
           - tool: seqtools
-            version: v0.9.8
-            tag: v0.9.8
+            version: 0.9.14
+            tag: 0.9.14
           - tool: simple_sv_annotation
             version: v1.0.0
             tag: v1.0.0
