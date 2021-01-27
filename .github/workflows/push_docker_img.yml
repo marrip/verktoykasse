@@ -14,6 +14,9 @@ jobs:
           - tool: breakdancer
             version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
             tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          - tool: bamtools
+            version: v2.5.1
+            tag: v2.5.1
           - tool: bamutil
             version: v1.0.14
             tag: v1.0.14
