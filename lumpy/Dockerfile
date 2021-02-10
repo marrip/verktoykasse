@@ -1,7 +1,7 @@
 FROM python:2.7.18-buster AS compiler
 ARG VERSION
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git=1:2.20.1-2+deb10u3 wget=1.20.1-1.1 ca-certificates=20200601~deb10u1 cmake=3.13.4-1 && \
+    apt-get install -y --no-install-recommends git=1:2.20.1-2+deb10u3 wget=1.20.1-1.1 ca-certificates=20200601~deb10u2 cmake=3.13.4-1 && \
     rm -rf /var/lib/apt/lists/*
 RUN wget https://github.com/biod/sambamba/releases/download/v0.7.0/sambamba-0.7.0-linux-static.gz && \
     gunzip sambamba-0.7.0-linux-static.gz && \
