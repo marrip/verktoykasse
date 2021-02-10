@@ -58,6 +58,10 @@ Containerized bioinformatic tools
 
 > Ye, K., Schulz, M. H., Long, Q., Apweiler, R., & Ning, Z. (2009). Pindel: A pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads. Bioinformatics, 25(21), 2865–2871.
 
+- R
+
+> R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
+
 - seqtools
 
 > https://github.com/seandavi/SDST
