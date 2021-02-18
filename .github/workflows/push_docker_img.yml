@@ -68,6 +68,9 @@ jobs:
           - tool: snpeff
             version: 5_0c
             tag: 5.0c
+          - tool: trimmomatic
+            version: 0.39
+            tag: 0.39
           - tool: vep
             version: release/102.0
             tag: 102.0
