@@ -12,4 +12,7 @@ RUN make && \
     make install
 
 FROM ubuntu:20.04
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends tabix=1.10.2-3 && \
+    rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/bin/* /usr/local/bin/
