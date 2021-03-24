@@ -30,6 +30,10 @@ Containerized bioinformatic tools
 
 > Krumm, N., Sudmant, P. H., Ko, A., O’Roak, B. J., Malig, M., Coe, B. P., Quinlan, A. R., Nickerson, D. A., & Eichler, E. E. (2012). Copy number variation detection and genotyping from exome sequence data. Genome Research, 22(8), 1525–1532.
 
+- cutadapt
+
+> Martin, M. (2010). Cutadapt removes adapter sequences from high-throughput sequencing reads. Technical Notes, 17(1), 10–12.
+
 - DELLY2
 
 > Rausch, T., Zichner, T., Schlattl, A., Stütz, A. M., Benes, V., & Korbel, J. O. (2012). DELLY: Structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics, 28(18), 333–339.
