@@ -46,6 +46,10 @@ Containerized bioinformatic tools
 
 > Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). Fastp: An ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, 34(17), i884–i890.
 
+- InDelible
+
+> Gardner, E. J., Sifrim, A., Lindsay, S. J., Prigmore, E., Rajan, D., Danecek, P., Gallone, G., Eberhardt, R. Y., Martin, H. C., Wright, C. F., Fitzpatrick, D. R., Firth, H. V, & Hurles, M. E. (2020). InDelible: Detection and Evaluation of Clinically-relevant Structural Variation from Exome Sequencing. MedRxiv.
+
 - LUMPY
 
 > Rausch, T., Zichner, T., Schlattl, A., Stütz, A. M., Benes, V., & Korbel, J. O. (2012). DELLY: Structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics, 28(18), 333–339.

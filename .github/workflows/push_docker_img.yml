@@ -47,6 +47,9 @@ jobs:
           - tool: fastqc
             version: 0.11.9+dfsg-2
             tag: 0.11.9
+          - tool: indelible
+            version: 57a0be6576598f6fbdcb87e73760f990f57a65fc
+            tag: 1.0.0
           - tool: lumpy
             version: v0.3.1
             tag: v0.3.1
