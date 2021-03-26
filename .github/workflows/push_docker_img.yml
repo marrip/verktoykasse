@@ -36,8 +36,8 @@ jobs:
             version: 0.2.2
             tag: 0.2.2
           - tool: cutadapt
-            version: 3.3
-            tag: 3.3
+            version: 3.0
+            tag: 3.0
           - tool: delly2
             version: v0.8.6
             tag: v0.8.6
