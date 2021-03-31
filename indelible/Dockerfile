@@ -11,7 +11,7 @@ RUN git checkout "$VERSION"
 
 FROM python:3.7.10-slim-buster
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential=12.6 zlib1g-dev=1:1.2.11.dfsg-1 bedtools=2.27.1+dfsg-4 && \
+    apt-get install -y --no-install-recommends build-essential=12.6 zlib1g-dev=1:1.2.11.dfsg-1 bedtools=2.27.1+dfsg-4 tabix=1.9-11 && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=download /indelible/indelible.py /indelible/indelible.py
 COPY --from=download /indelible/indelible/* /indelible/indelible/
