@@ -52,7 +52,7 @@ Containerized bioinformatic tools
 
 - LUMPY
 
-> Rausch, T., Zichner, T., Schlattl, A., Stütz, A. M., Benes, V., & Korbel, J. O. (2012). DELLY: Structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics, 28(18), 333–339.
+> Layer, R. M., Chiang, C., Quinlan, A. R., & Hall, I. M. (2014). LUMPY: A probabilistic framework for structural variant discovery. Genome Biology, 15(6), 1–19.
 
 - Manta
 
