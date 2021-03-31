@@ -11,9 +11,9 @@ jobs:
     strategy:
       matrix:
         array:
-          - tool: breakdancer
-            version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
-            tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          #- tool: breakdancer
+          #  version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          #  tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
           - tool: bamtools
             version: v2.5.1
             tag: v2.5.1
@@ -53,9 +53,9 @@ jobs:
           - tool: lumpy
             version: v0.3.1
             tag: v0.3.1
-          - tool: manta
-            version: v1.6.0
-            tag: v1.6.0
+          #- tool: manta
+          #  version: v1.6.0
+          #  tag: v1.6.0
           - tool: mosdepth
             version: v0.3.1
             tag: v0.3.1
