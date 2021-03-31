@@ -74,6 +74,9 @@ jobs:
           - tool: snpeff
             version: 5_0c
             tag: 5.0c
+          - tool: tiddit
+            version: TIDDIT-2.12.1
+            tag: 2.12.1
           - tool: trimmomatic
             version: 0.39
             tag: 0.39
