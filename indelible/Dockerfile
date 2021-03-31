@@ -17,3 +17,4 @@ COPY --from=download /indelible/indelible.py /indelible/indelible.py
 COPY --from=download /indelible/indelible/* /indelible/indelible/
 COPY --from=download /indelible/vr_runner_scripts/* /indelible/vr_runner_scripts/
 RUN pip install cython==0.29.22 numpy==1.17.2 pandas==0.25.1 pybedtools==0.8.2 pyfaidx==0.5.5.2 pysam==0.16.0.1 scipy==1.3.1 scikit-learn==0.21.3 PyYAML==5.1.2 Biopython==1.74 intervaltree==3.0.2
+ENV PATH=$PATH:/indelible
