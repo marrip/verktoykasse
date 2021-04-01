@@ -20,9 +20,9 @@ jobs:
           - tool: bamutil
             version: v1.0.14
             tag: v1.0.14
-          - tool: bwa
-            version: 0.7.15
-            tag: 0.7.15
+          #- tool: bwa
+          #  version: 0.7.17
+          #  tag: 0.7.17
           - tool: bwa-mem2
             version: 2.1
             tag: 2.1
