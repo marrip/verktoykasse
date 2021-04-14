@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 ARG VERSION
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends bedtools=2.26.0+dfsg-5 samtools=1.7-1 bcftools=1.7-2 && \
+    apt-get install -y --no-install-recommends bedtools=2.27.1+dfsg-4ubuntu1 samtools=1.10-3 bcftools=1.10.2-2 bwa=0.7.17-4 && \
     rm -rf /var/lib/apt/lists/*
