@@ -48,8 +48,8 @@ jobs:
             version: 0.11.9+dfsg-2
             tag: 0.11.9
           - tool: indelible
-            version: sv_caller
-            tag: 1.0.0
+            version: v1.1.0
+            tag: 1.1.0
           - tool: lumpy
             version: v0.3.1
             tag: v0.3.1
