@@ -3,7 +3,9 @@ ARG VERSION
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git=1:2.20.1-2+deb10u3 && \
     rm -rf /var/lib/apt/lists/*
-RUN git clone -b "$VERSION" https://github.com/eugenegardner/indelible.git
+RUN git clone https://github.com/eugenegardner/indelible.git
+WORKDIR /indelible
+RUN git checkout $VERSION
 
 FROM python:3.7.10-slim-buster
 RUN apt-get update && \
