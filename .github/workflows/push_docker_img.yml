@@ -29,6 +29,9 @@ jobs:
           - tool: cnvkit
             version: 0.9.7
             tag: 0.9.7
+          - tool: cnvnator
+            version: v0.4.1
+            tag: 0.4.1
           - tool: common
             version: 1.1.0
             tag: 1.1.0
