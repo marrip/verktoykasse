@@ -38,3 +38,4 @@ ENV ROOTSYS=/opt/root
 COPY --from=download /CNVnator/src/cnvnator /usr/local/bin/
 COPY --from=download /CNVnator/src/*.py /usr/local/bin/
 COPY --from=download /CNVnator/src/cnvnator2VCF.pl /usr/local/bin/
+RUN ln -s /usr/bin/python3 /usr/bin/python
