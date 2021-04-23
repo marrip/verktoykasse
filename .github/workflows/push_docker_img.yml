@@ -51,8 +51,8 @@ jobs:
             version: 0.11.9+dfsg-2
             tag: 0.11.9
           - tool: indelible
-            version: 11b5735f8efc8af58d572951ecff233729132414
-            tag: 1.1.1
+            version: 07b3430d828a6731bae8e03f36515adf801f3de5
+            tag: 1.1.2
           - tool: lumpy
             version: v0.3.1
             tag: v0.3.1
