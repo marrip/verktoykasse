@@ -20,6 +20,7 @@ COPY --from=compiler /build/buildTimeConfigInfo.txt /build/buildTimeConfigInfo.t
 COPY --from=compiler /build/lib /build/lib
 COPY --from=compiler /build/libexec /build/libexec
 COPY --from=compiler /build/redist /build/redist
+COPY --from=compiler /build/share /build/share
 RUN true
 COPY --from=compiler /build/src/python /build/src/python
 RUN true
