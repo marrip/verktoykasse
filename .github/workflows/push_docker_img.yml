@@ -77,15 +77,18 @@ jobs:
           - tool: snpeff
             version: 5_0c
             tag: 5.0c
-          - tool: strelka
-            version: 2.9.10
-            tag: 2.9.10
+          #- tool: strelka
+          #  version: 2.9.10
+          #  tag: 2.9.10
           - tool: tiddit
             version: TIDDIT-2.12.1
             tag: 2.12.1
           - tool: trimmomatic
             version: 0.39
             tag: 0.39
+          - tool: vardict
+            version: v1.8.2
+            tag: 1.8.2
           - tool: vcftools
             version: v0.1.16
             tag: v0.1.16

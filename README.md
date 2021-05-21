@@ -98,6 +98,10 @@ Containerized bioinformatic tools
 
 > Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina sequence data. Bioinformatics, 30(15), 2114–2120.
 
+- VarDict
+
+> Lai, Z., Markovets, A., Ahdesmaki, M., Chapman, B., Hofmann, O., Mcewen, R., Johnson, J., Dougherty, B., Barrett, J. C., & Dry, J. R. (2016). VarDict: A novel and versatile variant caller for next-generation sequencing in cancer research. Nucleic Acids Research, 44(11), 1–11.
+
 - VCFtools
 
 > Danecek, P., Auton, A., Abecasis, G., Albers, C. A., Banks, E., DePristo, M. A., Handsaker, R. E., Lunter, G., Marth, G. T., Sherry, S. T., McVean, G., & Durbin, R. (2011). The variant call format and VCFtools. Bioinformatics, 27(15), 2156–2158.
