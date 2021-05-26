@@ -11,7 +11,7 @@ RUN ./gradlew clean installDist
 FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends r-base=3.6.3-2 default-jre=2:1.11-72 && \
+    apt-get install -y --no-install-recommends r-base=3.6.3-2 default-jre=2:1.11-72 libperl4-corelibs-perl=0.004-2 && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=download /VarDictJava/build/install/VarDict/bin /usr/local/bin
 COPY --from=download /VarDictJava/build/install/VarDict/lib /usr/local/lib
