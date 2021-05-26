@@ -1,8 +1,19 @@
-FROM ubuntu:20.04
+FROM ubuntu:20.04 AS download
 ARG VERSION
-ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git=1:2.25.1-1ubuntu3.1 ca-certificates=20210119~20.04.1 samtools=1.10-3 r-base=3.6.3-2 && \
+    apt-get install -y --no-install-recommends git=1:2.25.1-1ubuntu3.1 ca-certificates=20210119~20.04.1 default-jre=2:1.11-72 && \
     rm -rf /var/lib/apt/lists/*
 RUN git clone -b $VERSION https://github.com/AstraZeneca-NGS/VarDict.git
-ENV PATH=$PATH:/VarDict
+RUN git clone -b $VERSION https://github.com/AstraZeneca-NGS/VarDictJava.git
+WORKDIR /VarDictJava
+RUN ./gradlew clean installDist
+
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends r-base=3.6.3-2 default-jre=2:1.11-72 && \
+    rm -rf /var/lib/apt/lists/*
+COPY --from=download /VarDictJava/build/install/VarDict/bin /usr/local/bin
+COPY --from=download /VarDictJava/build/install/VarDict/lib /usr/local/lib
+COPY --from=download /VarDict/test*.R /usr/local/bin
+COPY --from=download /VarDict/var2vcf_*.pl /usr/local/bin
