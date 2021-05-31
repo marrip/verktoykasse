@@ -9,7 +9,8 @@ WORKDIR /VarDictJava
 RUN ./gradlew clean installDist
 
 FROM ubuntu:20.04
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive \
+    JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 RUN apt-get update && \
     apt-get install -y --no-install-recommends r-base=3.6.3-2 default-jre=2:1.11-72 libperl4-corelibs-perl=0.004-2 && \
     rm -rf /var/lib/apt/lists/*
