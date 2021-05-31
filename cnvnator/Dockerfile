@@ -27,7 +27,7 @@ RUN sed -i '1s/^/#include <set>\n/' IO.cpp && \
 FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends python3=3.8.2-0ubuntu2 python3-matplotlib=3.1.2-1ubuntu4 python3-scipy=1.3.3-3build1 python3-tk=3.8.5-1~20.04.1 libcurl4-openssl-dev=7.68.0-1ubuntu2.5 libgomp1=10.2.0-5ubuntu1~20.04 build-essential=12.8ubuntu1.1 && \
+    apt-get install -y --no-install-recommends python3=3.8.2-0ubuntu2 python3-matplotlib=3.1.2-1ubuntu4 python3-scipy=1.3.3-3build1 python3-tk=3.8.10-0ubuntu1~20.04 libcurl4-openssl-dev=7.68.0-1ubuntu2.5 libgomp1=10.2.0-5ubuntu1~20.04 build-essential=12.8ubuntu1.1 && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=download /root/lib /opt/root/lib
 COPY --from=download /root/etc /opt/root/etc
