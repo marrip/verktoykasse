@@ -24,8 +24,8 @@ jobs:
           #  version: 0.7.17
           #  tag: 0.7.17
           - tool: bwa-mem2
-            version: 2.1
-            tag: 2.1
+            version: 2.2.1
+            tag: 2.2.1
           - tool: cnvkit
             version: 0.9.7
             tag: 0.9.7
