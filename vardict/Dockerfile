@@ -18,4 +18,4 @@ COPY --from=download /VarDictJava/build/install/VarDict/bin /usr/local/bin
 COPY --from=download /VarDictJava/build/install/VarDict/lib /usr/local/lib
 COPY --from=download /VarDict/test*.R /usr/local/bin/
 COPY --from=download /VarDict/var2vcf_*.pl /usr/local/bin/
-ENV VAR_DICT_OPTS=-Xmx4g
+ENV VAR_DICT_OPTS=-Xmx32g
