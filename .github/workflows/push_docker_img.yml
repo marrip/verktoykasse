@@ -27,8 +27,8 @@ jobs:
             version: 2.2.1
             tag: 2.2.1
           - tool: cnvkit
-            version: 0.9.7
-            tag: 0.9.7
+            version: 0.9.9
+            tag: 0.9.9
           - tool: cnvnator
             version: v0.4.1
             tag: 0.4.1
