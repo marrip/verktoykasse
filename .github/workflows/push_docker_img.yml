@@ -120,7 +120,5 @@ jobs:
         with:
           push: true
           context: ${{ matrix.array.tool }}
-          build_args: |
-            VERSION=${{ matrix.array.version }}
-          tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ matrix.array.tool }}:${{ matrix.array.tag }}
+          build-args: VERSION=${{ matrix.array.version }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ matrix.array.tool }}:${{ matrix.array.tag }}
