@@ -63,8 +63,8 @@ jobs:
             version: v0.3.1
             tag: v0.3.1
           - tool: multiqc
-            version: 1.10.1
-            tag: 1.10.1
+            version: 1.11
+            tag: 1.11
           - tool: pindel
             version: v0.2.5b8
             tag: v0.2.5b8
