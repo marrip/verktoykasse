@@ -11,18 +11,15 @@ jobs:
     strategy:
       matrix:
         array:
+          - tool: bamtools
+            version: v2.5.2
+            tag: 2.5.2
+          - tool: bamutil
+            version: v1.0.15
+            tag: 1.0.15
           #- tool: breakdancer
           #  version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
           #  tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
-          - tool: bamtools
-            version: v2.5.1
-            tag: v2.5.1
-          - tool: bamutil
-            version: v1.0.14
-            tag: v1.0.14
-          #- tool: bwa
-          #  version: 0.7.17
-          #  tag: 0.7.17
           - tool: bwa-mem2
             version: 2.2.1
             tag: 2.2.1
@@ -39,14 +36,14 @@ jobs:
             version: 0.2.2
             tag: 0.2.2
           - tool: cutadapt
-            version: 3.0
-            tag: 3.0
+            version: 3.4
+            tag: 3.4
           - tool: delly2
-            version: v0.8.6
-            tag: v0.8.6
+            version: v0.8.7
+            tag: 0.8.7
           - tool: fastp
-            version: 0.21.0
-            tag: 0.21.0
+            version: 0.22.0
+            tag: 0.22.0
           - tool: fastqc
             version: 0.11.9+dfsg-2
             tag: 0.11.9
@@ -55,7 +52,7 @@ jobs:
           #  tag: 1.1.2
           - tool: lumpy
             version: v0.3.1
-            tag: v0.3.1
+            tag: 0.3.1
           #- tool: manta
           #  version: v1.6.0
           #  tag: v1.6.0
@@ -76,7 +73,7 @@ jobs:
             tag: 0.9.14
           - tool: simple_sv_annotation
             version: v1.0.0
-            tag: v1.0.0
+            tag: 1.0.0
           - tool: snpeff
             version: 5_0c
             tag: 5.0c
@@ -94,10 +91,10 @@ jobs:
             tag: 1.8.2
           - tool: vcftools
             version: v0.1.16
-            tag: v0.1.16
+            tag: 0.1.16
           - tool: vep
-            version: release/102.0
-            tag: 102.0
+            version: release/104.3
+            tag: 104.3
     runs-on: ubuntu-latest
     steps:
       - 
