@@ -47,6 +47,9 @@ jobs:
           - tool: fastqc
             version: 0.11.9+dfsg-2
             tag: 0.11.9
+          - tool: fastq-screen
+            version: v0.14.1
+            tag: 0.14.1
           #- tool: indelible
           #  version: 07b3430d828a6731bae8e03f36515adf801f3de5
           #  tag: 1.1.2
