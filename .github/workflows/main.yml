@@ -11,93 +11,93 @@ jobs:
     strategy:
       matrix:
         array:
-          - tool: bamtools
-            version: v2.5.2
-            tag: 2.5.2
-          - tool: bamutil
-            version: v1.0.15
-            tag: 1.0.15
-          #- tool: breakdancer
-          #  version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
-          #  tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
-          - tool: bwa-mem2
-            version: 2.2.1
-            tag: 2.2.1
-          - tool: cnvkit
-            version: 0.9.9
-            tag: 0.9.9
-          - tool: cnvnator
-            version: v0.4.1
-            tag: 0.4.1
-          - tool: common
-            version: 1.1.1
-            tag: 1.1.1
-          - tool: conifer
-            version: 0.2.2
-            tag: 0.2.2
-          - tool: cutadapt
-            version: 3.4
-            tag: 3.4
-          - tool: delly2
-            version: v0.8.7
-            tag: 0.8.7
-          - tool: fastp
-            version: 0.22.0
-            tag: 0.22.0
-          - tool: fastqc
-            version: 0.11.9+dfsg-2
-            tag: 0.11.9
+          #- tool: bamtools
+          #  version: v2.5.2
+          #  tag: 2.5.2
+          #- tool: bamutil
+          #  version: v1.0.15
+          #  tag: 1.0.15
+          ##- tool: breakdancer
+          ##  version: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          ##  tag: 4e44b4395cd89a76a574a246b886eec4ee9d295a
+          #- tool: bwa-mem2
+          #  version: 2.2.1
+          #  tag: 2.2.1
+          #- tool: cnvkit
+          #  version: 0.9.9
+          #  tag: 0.9.9
+          #- tool: cnvnator
+          #  version: v0.4.1
+          #  tag: 0.4.1
+          #- tool: common
+          #  version: 1.1.1
+          #  tag: 1.1.1
+          #- tool: conifer
+          #  version: 0.2.2
+          #  tag: 0.2.2
+          #- tool: cutadapt
+          #  version: 3.4
+          #  tag: 3.4
+          #- tool: delly2
+          #  version: v0.8.7
+          #  tag: 0.8.7
+          #- tool: fastp
+          #  version: 0.22.0
+          #  tag: 0.22.0
+          #- tool: fastqc
+          #  version: 0.11.9+dfsg-2
+          #  tag: 0.11.9
           - tool: fastq-screen
             version: v0.14.1
             tag: 0.14.1
-          #- tool: indelible
-          #  version: 07b3430d828a6731bae8e03f36515adf801f3de5
-          #  tag: 1.1.2
-          - tool: lumpy
-            version: v0.3.1
-            tag: 0.3.1
-          #- tool: manta
-          #  version: v1.6.0
-          #  tag: v1.6.0
-          - tool: mosdepth
-            version: v0.3.2
-            tag: 0.3.2
-          - tool: multiqc
-            version: 1.11
-            tag: 1.11
-          - tool: pindel
-            version: v0.2.5b8
-            tag: v0.2.5b8
-          - tool: r-base
-            version: 4.0.3
-            tag: 4.0.3
-          - tool: seqtools
-            version: 0.9.14
-            tag: 0.9.14
-          - tool: simple_sv_annotation
-            version: v1.0.0
-            tag: 1.0.0
-          - tool: snpeff
-            version: 5_0c
-            tag: 5.0c
-          #- tool: strelka
-          #  version: 2.9.10
-          #  tag: 2.9.10
-          - tool: tiddit
-            version: TIDDIT-2.12.1
-            tag: 2.12.1
-          - tool: trimmomatic
-            version: 0.39
-            tag: 0.39
-          - tool: vardict
-            version: v1.8.2
-            tag: 1.8.2
-          - tool: vcftools
-            version: v0.1.16
-            tag: 0.1.16
-          - tool: vep
-            version: release/104.3
-            tag: 104.3
+          ##- tool: indelible
+          ##  version: 07b3430d828a6731bae8e03f36515adf801f3de5
+          ##  tag: 1.1.2
+          #- tool: lumpy
+          #  version: v0.3.1
+          #  tag: 0.3.1
+          ##- tool: manta
+          ##  version: v1.6.0
+          ##  tag: v1.6.0
+          #- tool: mosdepth
+          #  version: v0.3.2
+          #  tag: 0.3.2
+          #- tool: multiqc
+          #  version: 1.11
+          #  tag: 1.11
+          #- tool: pindel
+          #  version: v0.2.5b8
+          #  tag: v0.2.5b8
+          #- tool: r-base
+          #  version: 4.0.3
+          #  tag: 4.0.3
+          #- tool: seqtools
+          #  version: 0.9.14
+          #  tag: 0.9.14
+          #- tool: simple_sv_annotation
+          #  version: v1.0.0
+          #  tag: 1.0.0
+          #- tool: snpeff
+          #  version: 5_0c
+          #  tag: 5.0c
+          ##- tool: strelka
+          ##  version: 2.9.10
+          ##  tag: 2.9.10
+          #- tool: tiddit
+          #  version: TIDDIT-2.12.1
+          #  tag: 2.12.1
+          #- tool: trimmomatic
+          #  version: 0.39
+          #  tag: 0.39
+          #- tool: vardict
+          #  version: v1.8.2
+          #  tag: 1.8.2
+          #- tool: vcftools
+          #  version: v0.1.16
+          #  tag: 0.1.16
+          #- tool: vep
+          #  version: release/104.3
+          #  tag: 104.3
     runs-on: ubuntu-latest
     steps:
       - 
