@@ -83,6 +83,9 @@ jobs:
           #- tool: snpeff
           #  version: 5_0c
           #  tag: 5.0c
+          - tool: spades
+            version: 3.15.3
+            tag: 3.15.3
           ##- tool: strelka
           ##  version: 2.9.10
           ##  tag: 2.9.10
