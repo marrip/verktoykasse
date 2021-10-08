@@ -68,6 +68,9 @@ jobs:
           #- tool: pindel
           #  version: v0.2.5b8
           #  tag: v0.2.5b8
+          - tool: quast
+            version: quast_5.0.2
+            tag: 5.0.2
           #- tool: r-base
           #  version: 4.0.3
           #  tag: 4.0.3
