@@ -95,6 +95,9 @@ jobs:
           #- tool: trimmomatic
           #  version: 0.39
           #  tag: 0.39
+          - tool: unicycler
+            version: v0.4.9
+            tag: 0.4.9
           #- tool: vardict
           #  version: v1.8.2
           #  tag: 1.8.2
