@@ -47,9 +47,9 @@ jobs:
           #- tool: fastqc
           #  version: 0.11.9+dfsg-2
           #  tag: 0.11.9
-          - tool: fastq-screen
-            version: v0.14.1
-            tag: 0.14.1
+          #- tool: fastq-screen
+          #  version: v0.14.1
+          #  tag: 0.14.1
           ##- tool: indelible
           ##  version: 07b3430d828a6731bae8e03f36515adf801f3de5
           ##  tag: 1.1.2
@@ -68,9 +68,9 @@ jobs:
           #- tool: pindel
           #  version: v0.2.5b8
           #  tag: v0.2.5b8
-          - tool: quast
-            version: quast_5.0.2
-            tag: 5.0.2
+          #- tool: quast
+          #  version: quast_5.0.2
+          #  tag: 5.0.2
           #- tool: r-base
           #  version: 4.0.3
           #  tag: 4.0.3
@@ -83,9 +83,12 @@ jobs:
           #- tool: snpeff
           #  version: 5_0c
           #  tag: 5.0c
-          - tool: spades
-            version: 3.15.3
-            tag: 3.15.3
+          - tool: sortmerna
+            version: 4.3.4
+            tag: 4.3.4
+          #- tool: spades
+          #  version: 3.15.3
+          #  tag: 3.15.3
           ##- tool: strelka
           ##  version: 2.9.10
           ##  tag: 2.9.10
@@ -95,9 +98,9 @@ jobs:
           #- tool: trimmomatic
           #  version: 0.39
           #  tag: 0.39
-          - tool: unicycler
-            version: v0.4.9
-            tag: 0.4.9
+          #- tool: unicycler
+          #  version: v0.4.9
+          #  tag: 0.4.9
           #- tool: vardict
           #  version: v1.8.2
           #  tag: 1.8.2
