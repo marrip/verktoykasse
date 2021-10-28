@@ -42,13 +42,17 @@ Containerized bioinformatic tools
 
 > Rausch, T., Zichner, T., Schlattl, A., Stütz, A. M., Benes, V., & Korbel, J. O. (2012). DELLY: Structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics, 28(18), 333–339.
 
-- FastQC
-
-> Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data.
-
 - fastp
 
 > Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). Fastp: An ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, 34(17), i884–i890.
+
+- FastQ Screen
+
+> Wingett, S. W., & Andrews, S. (2018). Fastq screen: A tool for multi-genome mapping and quality control. F1000Research, 7(0), 1–13.
+
+- FastQC
+
+> Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data.
 
 - InDelible
 
@@ -74,6 +78,10 @@ Containerized bioinformatic tools
 
 > Ye, K., Schulz, M. H., Long, Q., Apweiler, R., & Ning, Z. (2009). Pindel: A pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads. Bioinformatics, 25(21), 2865–2871.
 
+- QUAST
+
+> Gurevich, A., Saveliev, V., Vyahhi, N., & Tesler, G. (2013). QUAST: Quality assessment tool for genome assemblies. Bioinformatics, 29(8), 1072–1075.
+
 - R
 
 > R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
@@ -90,6 +98,18 @@ Containerized bioinformatic tools
 
 > Cingolani, P., Platts, A., Wang, L. L., Coon, M., Nguyen, T., Wang, L., Land, S. J., Lu, X., & Ruden, D. M. (2012). A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff. Fly, 6(2), 80–92.
 
+- SortMeRNA
+
+> Kopylova, E., Noé, L., & Touzet, H. (2012). SortMeRNA: Fast and accurate filtering of ribosomal RNAs in metatranscriptomic data. Bioinformatics, 28(24), 3211–3217.
+
+- SPAdes
+
+> Bankevich, A., Nurk, S., Antipov, D., Gurevich, A. A., Dvorkin, M., Kulikov, A. S., Lesin, V. M., Nikolenko, S. I., Pham, S., Prjibelski, A. D., Pyshkin, A. V., Sirotkin, A. V., Vyahhi, N., Tesler, G., Alekseyev, M. A., & Pevzner, P. A. (2012). SPAdes: A new genome assembly algorithm and its applications to single-cell sequencing. Journal of Computational Biology, 19(5), 455–477.
+
+- STAR
+
+> Dobin, A., Davis, C. A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., Chaisson, M., & Gingeras, T. R. (2013). STAR: Ultrafast universal RNA-seq aligner. Bioinformatics, 29(1), 15–21.
+
 - Strelka
 
 > Kim, S., Scheffler, K., Halpern, A. L., Bekritsky, M. A., Noh, E., Källberg, M., Chen, X., Kim, Y., Beyter, D., Krusche, P., & Saunders, C. T. (2018). Strelka2: fast and accurate calling of germline and somatic variants. Nature Methods, 15(8), 591–594.
@@ -101,6 +121,10 @@ Containerized bioinformatic tools
 - Trimmomatic
 
 > Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina sequence data. Bioinformatics, 30(15), 2114–2120.
+
+- Unicycler
+
+> Wick, R. R., Judd, L. M., Gorrie, C. L., & Holt, K. E. (2017). Unicycler: Resolving bacterial genome assemblies from short and long sequencing reads. PLoS Computational Biology, 13(6), 1–22.
 
 - VarDict
 
