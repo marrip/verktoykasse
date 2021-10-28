@@ -89,9 +89,12 @@ jobs:
           #- tool: spades
           #  version: 3.15.3
           #  tag: 3.15.3
-          ##- tool: strelka
-          ##  version: 2.9.10
-          ##  tag: 2.9.10
+          - tool: star
+            version: 2.7.9a
+            tag: 2.7.9a
+          #- tool: strelka
+          #  version: 2.9.10
+          #  tag: 2.9.10
           #- tool: tiddit
           #  version: TIDDIT-2.12.1
           #  tag: 2.12.1
