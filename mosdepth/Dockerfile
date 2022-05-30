@@ -6,4 +6,3 @@ RUN apt-get update && \
 WORKDIR /usr/local/bin
 RUN wget "https://github.com/brentp/mosdepth/releases/download/${VERSION}/mosdepth"
 RUN chmod a+x mosdepth
-
