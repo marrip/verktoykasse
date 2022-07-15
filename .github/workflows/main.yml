@@ -53,6 +53,9 @@ jobs:
           ##- tool: indelible
           ##  version: 07b3430d828a6731bae8e03f36515adf801f3de5
           ##  tag: 1.1.2
+          - tool: interop
+            version: 1.1.25
+            tag: 1.1.25
           #- tool: lumpy
           #  version: v0.3.1
           #  tag: 0.3.1
