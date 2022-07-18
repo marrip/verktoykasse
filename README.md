@@ -58,6 +58,10 @@ Containerized bioinformatic tools
 
 > Gardner, E. J., Sifrim, A., Lindsay, S. J., Prigmore, E., Rajan, D., Danecek, P., Gallone, G., Eberhardt, R. Y., Martin, H. C., Wright, C. F., Fitzpatrick, D. R., Firth, H. V, & Hurles, M. E. (2020). InDelible: Detection and Evaluation of Clinically-relevant Structural Variation from Exome Sequencing. MedRxiv.
 
+- InterOp
+
+> Illumina
+
 - LUMPY
 
 > Layer, R. M., Chiang, C., Quinlan, A. R., & Hall, I. M. (2014). LUMPY: A probabilistic framework for structural variant discovery. Genome Biology, 15(6), 1–19.
