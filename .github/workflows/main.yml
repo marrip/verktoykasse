@@ -53,9 +53,9 @@ jobs:
           ##- tool: indelible
           ##  version: 07b3430d828a6731bae8e03f36515adf801f3de5
           ##  tag: 1.1.2
-          - tool: interop
-            version: 1.1.25
-            tag: 1.1.25
+          #- tool: interop
+          #  version: 1.1.25
+          #  tag: 1.1.25
           #- tool: lumpy
           #  version: v0.3.1
           #  tag: 0.3.1
@@ -68,6 +68,9 @@ jobs:
           #- tool: multiqc
           #  version: 1.11
           #  tag: 1.11
+          - tool: oncocnv
+            version: 7.0
+            tag: 7.0
           #- tool: pindel
           #  version: v0.2.5b8
           #  tag: v0.2.5b8
@@ -86,15 +89,15 @@ jobs:
           #- tool: snpeff
           #  version: 5_0c
           #  tag: 5.0c
-          - tool: sortmerna
-            version: 4.2.0
-            tag: 4.2.0
-          #- tool: spades
-          #  version: 3.15.3
-          #  tag: 3.15.3
-          - tool: star
-            version: 2.7.9a
-            tag: 2.7.9a
+          #- tool: sortmerna
+          #  version: 4.2.0
+          #  tag: 4.2.0
+          ##- tool: spades
+          ##  version: 3.15.3
+          ##  tag: 3.15.3
+          #- tool: star
+          #  version: 2.7.9a
+          #  tag: 2.7.9a
           #- tool: strelka
           #  version: 2.9.10
           #  tag: 2.9.10
