@@ -78,6 +78,10 @@ Containerized bioinformatic tools
 
 > Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: Summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048.
 
+- ONCOCNV
+
+> Boeva, V., Popova, T., Lienard, M., Toffoli, S., Kamal, M., Le Tourneau, C., ... & Laes, J. F. (2014). Multi-factor data normalization enables the detection of copy number aberrations in amplicon sequencing data. Bioinformatics, 30(24), 3443-3450.
+
 - Pindel
 
 > Ye, K., Schulz, M. H., Long, Q., Apweiler, R., & Ning, Z. (2009). Pindel: A pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads. Bioinformatics, 25(21), 2865–2871.
