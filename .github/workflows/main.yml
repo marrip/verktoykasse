@@ -69,7 +69,7 @@ jobs:
           #  version: 1.11
           #  tag: 1.11
           - tool: oncocnv
-            version: 7.0
+            version: v7.0
             tag: 7.0
           #- tool: pindel
           #  version: v0.2.5b8

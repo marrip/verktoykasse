@@ -1,11 +1,12 @@
 FROM ubuntu:20.04 AS download
+ARG VERSION
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       ca-certificates=20211016~20.04.1 \
       git=1:2.25.1-1ubuntu3.6 && \
     rm -rf /var/lib/apt/lists/*
-RUN git clone -b master --depth 1 https://github.com/BoevaLab/ONCOCNV.git
+RUN git clone -b $VERSION --depth 1 https://github.com/BoevaLab/ONCOCNV.git
 
 FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
